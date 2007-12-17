@@ -9,7 +9,6 @@ Release:	%{release}
 License:	GPL
 Group:		Games/Other
 URL:		http://tetrinetx.sf.net/
-Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 Source:		%{name}-%{version}+qirc-%{qversion}.tar.bz2
 Source1:	%{name}.init.bz2
 # (Abel) 1.3.16-1mdk don't search for all files under cwd

@@ -16,7 +16,7 @@ Patch0:		%{name}-1.13.16-filepath.patch.bz2
 # (Abel) 1.3.16-1mdk more secure default config
 Patch1:		%{name}-1.13.16-config.patch.bz2
 BuildRequires:	libadns-devel
-Prereq:		rpm-helper
+Requires(post,preun):	rpm-helper
 
 %description
 Tetrinet is a multiplayer tetris game with special blocks and supports

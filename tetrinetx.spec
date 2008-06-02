@@ -47,8 +47,8 @@ mkdir -p %{buildroot}%{_sysconfdir}/%{name}
 install -m 0644 bin/* %{buildroot}%{_sysconfdir}/%{name}/
 
 mkdir -p %{buildroot}/var/log/%{name}
-mkdir -p %{buildroot}%{_localstatedir}/games/%{name}
-touch %{buildroot}%{_localstatedir}/games/%{name}/game.winlist{,2,3}
+mkdir -p %{buildroot}%{_localstatedir}/lib/games/%{name}
+touch %{buildroot}%{_localstatedir}/lib/games/%{name}/game.winlist{,2,3}
 
 %clean
 rm -rf %{buildroot}
@@ -76,9 +76,9 @@ rm -rf %{buildroot}
 %config(noreplace) %{_sysconfdir}/%{name}/game.secure
 
 %defattr(0660,root,games,0770)
-%dir %{_localstatedir}/games/tetrinetx
-%ghost %{_localstatedir}/games/tetrinetx/game.winlist
-%ghost %{_localstatedir}/games/tetrinetx/game.winlist2
-%ghost %{_localstatedir}/games/tetrinetx/game.winlist3
+%dir %{_localstatedir}/lib/games/tetrinetx
+%ghost %{_localstatedir}/lib/games/tetrinetx/game.winlist
+%ghost %{_localstatedir}/lib/games/tetrinetx/game.winlist2
+%ghost %{_localstatedir}/lib/games/tetrinetx/game.winlist3
 %dir /var/log/%{name}
 

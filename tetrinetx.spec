@@ -1,6 +1,6 @@
 %define	version 1.13.16
 %define	qversion 1.40c
-%define release	%mkrel 6
+%define release	%mkrel 7
 
 Summary:	TetriNET server
 Name:		tetrinetx

@@ -82,3 +82,44 @@ rm -rf %{buildroot}
 %ghost %{_localstatedir}/lib/games/tetrinetx/game.winlist3
 %dir /var/log/%{name}
 
+
+
+%changelog
+* Wed Sep 09 2009 Thierry Vignaud <tvignaud@mandriva.com> 1.13.16-7mdv2010.0
++ Revision: 434348
+- rebuild
+
+* Sat Aug 02 2008 Thierry Vignaud <tvignaud@mandriva.com> 1.13.16-6mdv2009.0
++ Revision: 261509
+- rebuild
+
+* Wed Jul 30 2008 Thierry Vignaud <tvignaud@mandriva.com> 1.13.16-5mdv2009.0
++ Revision: 254399
+- rebuild
+
+  + Pixel <pixel@mandriva.com>
+    - adapt to %%_localstatedir now being /var instead of /var/lib (#22312)
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Tue Dec 18 2007 Thierry Vignaud <tvignaud@mandriva.com> 1.13.16-3mdv2008.1
++ Revision: 131800
+- fix prereq on rpm-helper
+- kill re-definition of %%buildroot on Pixel's request
+- use %%mkrel
+- import tetrinetx
+
+
+* Sat Jun 11 2005 Abel Cheung <deaddog@mandrivalinux.org> 1.13.16-3mdk
+- Rebuild
+
+
+* Fri May 14 2004 Michael Scherer <misc@mandrake.org> 1.13.16-2mdk 
+- correct unsatisfied Buildrequires
+- correct various rpmlint error
+
+* Wed Sep 24 2003 Abel Cheung <deaddog@deaddog.org> 1.13.16-1mdk
+- First Mandrake package, tetrinetx-1.3.16+qirc-1.40c
+- Patch0: Make tetrinet-x search for files in FHS compliant paths
+- Patch1: More secure default config

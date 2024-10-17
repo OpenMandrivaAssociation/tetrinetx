@@ -8,7 +8,7 @@ Version:	%{version}
 Release:	%{release}
 License:	GPL
 Group:		Games/Other
-URL:		http://tetrinetx.sf.net/
+URL:		https://tetrinetx.sf.net/
 Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 Source:		%{name}-%{version}+qirc-%{qversion}.tar.bz2
 Source1:	%{name}.init.bz2
